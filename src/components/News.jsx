@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 
 const News = () => {
-    const apiKey = "3a0013197fa3335979d86c7a371ce95a";
+    const apiKey = "5ee7578452ef4bfc8ae21c137e5c0b7b";
     const [query, setQuery] = useState("");
     const [sortBy, setSortBy] = useState("popularity"); // Default sorting by popularity
     const [articles, setArticles] = useState([]);
@@ -56,7 +56,7 @@ const News = () => {
                 <div className="grid grid-cols-2 max-w-7xl mx-auto md:grid-cols-3 items-center justify-center gap-3 mt-5">
                     {articles?.map((article, index) => (
                         <div
-                            className="w-96 h-auto gap-5 shadow-lg rounded overflow-hidden bg-black transition transform transform hover:translate-y-[-10px] hover:shadow-2xl"
+                            className="w-100 h-100 gap-5 shadow-lg rounded overflow-hidden bg-black transition transform transform hover:translate-y-[-10px] hover:shadow-2xl"
                             key={index}
                         >
                             <div className="w-full h-48 overflow-hidden">
